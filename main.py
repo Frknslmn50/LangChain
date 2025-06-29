@@ -68,7 +68,7 @@ if clicked_search_button:
 
     # Create an OpenAIEmbeddings object to get the embeddings of the chunks
     embeddings = OpenAIEmbeddings(
-        api_key=os.getenv("OPENAI_API_KEY")
+        openai_api_key=os.getenv("OPENAI_API_KEY")
     )
 
     progress_placeholder.text("Getting embeddings of the chunks...")
